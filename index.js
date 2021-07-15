@@ -11,8 +11,14 @@ const slaxConfigPath = path.resolve("./slax.config.json");
 
 const commands = {
   mkdir: (options) => {
-    const p = path.resolve(options.path);
-    fs.ensureDir(p);
+    if (Array.isArray(options.path)) {
+      for (const p of options.path) {
+        commands.mkdir({ ...options, path: p });
+      }
+    } else {
+      const p = path.resolve(options.path);
+      fs.ensureDir(p);
+    }
   },
   writeFile: (options) => {
     const p = path.resolve(options.path);
