@@ -98,7 +98,7 @@ You can pass any options you can, and `%optionName%` in `options` field will be 
   "options": {
     "path": "./src/features/%n%/atoms/%f%.ts",
     "content": [
-      "export const %f = () => {", 
+      "export const %f% = () => {", 
       "\treturn <div>Test</div>", 
       "}"
     ]
@@ -124,4 +124,5 @@ You can pass any options you can, and `%optionName%` in `options` field will be 
 ## TODO
 
 - [ ] More commands
+- [ ] Support for `.js` config file
 - [ ] Support for custom command types
