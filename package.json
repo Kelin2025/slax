@@ -9,8 +9,12 @@
   "bin": {
     "slax": "./index.js"
   },
-  "author": "",
+  "author": "Anton Kosykh",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kelin2025/slax.git",
+  },
   "dependencies": {
     "fs-extra": "^10.0.0",
     "yargs": "^17.0.1"
