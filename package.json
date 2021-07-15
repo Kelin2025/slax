@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-react-app": "./index.js"
+    "slax": "./index.js"
   },
   "author": "",
   "license": "ISC",
